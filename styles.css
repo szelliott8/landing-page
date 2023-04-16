@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: Roboto;
+    margin:0px;
 }
 .header-logo{
     flex:1 1 200px;
@@ -13,7 +14,7 @@ body {
     flex-direction: row;
     color:white;
     background-color: #1f2937;
-    padding:20px 100px;
+    padding:40px 100px;
 }
 .header-nav {
     display:flex;
@@ -56,10 +57,7 @@ h2 {
     align-items: center;
 }
 
-.middle-content {
-    display:flex;
-    padding:20px 100px;
-}
+
 button {
     background-color: #3882f6;
     flex-grow: 0;
@@ -67,12 +65,21 @@ button {
     padding:10px;
     border-radius:10px;
     color:white;
+    font-size: 20px
 }
 
-.middle-content {
+.cta > button {
+border-color: white;
+border-width: 3px;
+align-self: center; 
+
+}
+
+.info-content {
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding:40px 200px;
 }
 .info-container {
     display:flex;
@@ -86,7 +93,6 @@ button {
     flex-direction: column;
     align-items: center;
     flex: 1;
-
 }
 .info-item > img {
     display:flex;
@@ -105,3 +111,35 @@ button {
     flex-wrap:wrap;
     font-size: 18px;
 }
+
+.quote {
+    padding: 80px 200px;
+    background-color: lightgrey;
+}
+
+.quote>.text {
+    font-size: 40px;
+    font-style: italic;
+}
+.quote>.signed {
+    font-style: italic;
+    font-weight:900;
+    text-align: right;
+}
+
+.cta {
+    display:flex;
+    margin:40px 120px;
+    background-color: #3882f6;
+    padding: 20px 80px;
+    border-radius: 5px;
+    align-items: center;
+}
+.cta > .text {
+    flex:3;
+    color:white;
+}
+.button-holder {
+    flex:1
+}
+
